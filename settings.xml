@@ -1,0 +1,64 @@
+<settings>
+	<!-- Port the server will listen on -->
+        <!-- Порт для подключения к серверу -->
+	<port>9999</port>
+	
+	<!-- The port the webserver listens on -->
+	<httpport>9998</httpport>
+	
+	<!-- An external webserver that you host your files on, can be either the server's name or IP -->
+	<!-- httpserver>frs.ivmp.ru</httpserver -->
+
+        <!--  Maximum number of players the server will support (Max 32) --> 
+	<!-- Максимальное количество игроков которой может одновременно играть на сервере (Максимум 32) -->
+	<maxplayers>24</maxplayers>
+
+        <!--  Maximum number of vehicles the server will support (Max 140) -->
+	<!-- Максимальное количество транспорта поддерживаемое сервером (Максимум 140) -->
+	<maxvehicles>400</maxvehicles>
+
+        <!--  Password clients will have to enter to connect -->
+	<!-- Пароль, который будет запрашиваться при подключении к серверу -->
+	<!--password>6525</password-->
+
+	<!--  Add the server to the master list -->
+        <!-- Добовлять сервер в мастер лист (true - да; false - (нет)) -->
+	<listed>true</listed>
+
+        <!--  The hostname players will see -->
+	<!-- Название сервера -->
+	<hostname>FIRST RUS SERVER (SimpleDM v0.2 by ivmp.ru)</hostname>
+
+	<!-- The address the server will bind to -->
+        <!-- IP адрес сервера -->
+	<!-- hostaddress>178.64.252.48</hostaddress>
+	<hostaddress>frs.ivmp.ru</hostaddress -->
+
+	<!-- Toggles frequently called events which has impact on CPU usage  -->
+        <!-- Включить часто вызываемые события, который оказывают влияние на использование ЦП -->
+        <!-- true - да; false - нет -->
+	<frequentevents>false</frequentevents>
+	
+	<!-- The scripts the server will load and run -->
+        <!-- Сценарии с которыми сервер будут загружаться и работать -->
+	<script>simpledm.nut</script>
+	<!--script>csclone.nut</script-->
+	
+	
+	<!-- The scripts the client will download and run -->
+	<clientscript>loginPanelFRS.sq</clientscript>
+	<clientscript>playersListFRS.sq</clientscript>
+	<!--clientscript>requstClassFRS.sq</clientscript-->
+	<clientscript>foodSystemFRS.sq</clientscript>
+	<!--clientscript>csclone_cl.sq</clientscript-->
+	
+	<!-- The resources the client will download and used by clientscripts -->
+	<!--clientresource>4.png</clientresource -->
+	
+	<!-- The modules the server will load and run -->
+	<!-- For windows: -->
+	<!-- module>Sample.dll</module -->
+	<!-- For linux: -->
+	<module>iv-mysql.so</module>
+	
+</settings>
